@@ -1,3 +1,4 @@
 function add(a, b) {
-  return a + b;
+  var c = context.getVariable('c');
+  return (a + b) * c;
 }

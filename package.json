@@ -1,0 +1,19 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myUtil.js",
+  "dependencies": {
+    "expect.js": "^0.3.1",
+    "rewire": "^4.0.1",
+    "sinon": "^6.1.5"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
