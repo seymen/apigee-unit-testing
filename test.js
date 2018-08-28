@@ -11,16 +11,16 @@ var fakeContext = {
 var contextGetVariableMethod;
 
 beforeEach(function () {
-	contextGetVariableMethod = sinon.stub(fakeContext, 'getVariable');
+  contextGetVariableMethod = sinon.stub(fakeContext, 'getVariable');
 });
 
 afterEach(function() {
-	contextGetVariableMethod.restore();
+  contextGetVariableMethod.restore();
 });
 
 describe('feature: add', function() {
   it('should add two numbers', function() {
-		contextGetVariableMethod.withArgs('c').returns(3);
+    contextGetVariableMethod.withArgs('c').returns(3);
     app.__set__('context', fakeContext);
 
     var add = app.__get__('add');
